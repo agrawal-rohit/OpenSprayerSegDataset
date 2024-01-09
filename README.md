@@ -1,9 +1,16 @@
-# OpenSprayerSegDataset
-A dataset for semantic segmentation created using overlapping docks from the Open Sprayer Dataset. It consists of 4172 RGB images containing weeds from the Open Sprayer Dataset with size (256,256,3), and their corresponding binary masks with size (256,256,1) where '0' corresponds to pixels for the crop, and '1' corresponds to pixels for the weeds. The Open Sprayer Dataset contains only 1173 images containing weeds, thus these images and their masks were augmented by horizontal flipping, vertical flipping, and rotation to reach the 4172 samples. These masks were created using Gimp - a free and open-source image manipulation program. 
+# Overview
+The [OpenSprayerSeg](https://www.kaggle.com/datasets/thatawkwardguy/opensprayerseg/data) dataset is a meticulously curated dataset specifically designed for the field of semantic segmentation in agricultural applications. Originating from the Open Sprayer Dataset, this collection features 4172 RGB images, each with a resolution of 256x256x3 pixels. These images predominantly showcase weeds and are complemented by corresponding binary masks of the same resolution (256x256x1). The binary masks are designed with a dual classification system: '0' signifies crop pixels, while '1' denotes weed pixels.
 
-[Download the Dataset](https://drive.google.com/file/d/14Dwe2y0qjXB8cAwRO14ifwfPWZ4pP_K8/view?usp=sharing)
+# Dataset Details
+[The Open Sprayer Dataset](https://www.kaggle.com/datasets/gavinarmstrong/open-sprayer-images), the parent source, contains 1173 original images featuring weeds. To expand this collection and enrich the dataset, various augmentation techniques were applied, including horizontal flipping, vertical flipping, and rotation. This process was instrumental in extending the dataset to its current volume of 4172 samples.
 
-## Samples from the created dataset.
+# Preparation
+The binary masks within this dataset were crafted using Gimp, a renowned free and open-source image manipulation program.
+
+# Dataset Access
+You can access the OpenSprayerSeg data on [Kaggle](https://www.kaggle.com/datasets/thatawkwardguy/opensprayerseg/data).
+
+## Image Samples
 ![fig6a](https://user-images.githubusercontent.com/29514438/86437885-1a3e0a80-bd23-11ea-9d7e-73de0eabf982.jpg)
 ![Sample1Mask](https://user-images.githubusercontent.com/29514438/86437890-1ca06480-bd23-11ea-98cf-e498a0bb0b96.jpg)
 ![Sample2](https://user-images.githubusercontent.com/29514438/86437894-1d38fb00-bd23-11ea-8ead-78dbcd738e09.jpg)
